@@ -1,15 +1,9 @@
 name: Add Dates to New Resources
 
-on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'README.md'
-
+on: push
 jobs:
   add-dates:
-    runs-on: ubuntu-latest
+    runs-on: puzl-ubuntu-latest
     steps:
       - name: Checkout main
         uses: actions/checkout@v4
